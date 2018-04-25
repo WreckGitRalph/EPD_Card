@@ -1,0 +1,677 @@
+EESchema Schematic File Version 4
+LIBS:card-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega168PA-AU U1
+U 1 1 5AB83279
+P 2850 3350
+F 0 "U1" H 2100 4600 50  0000 L BNN
+F 1 "ATMEGA168PA-AU" H 3250 1950 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 2850 3350 50  0001 C CIN
+F 3 "" H 2850 3350 50  0001 C CNN
+	1    2850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5AB83743
+P 1500 6500
+F 0 "#PWR0101" H 1500 6250 50  0001 C CNN
+F 1 "GND" H 1500 6350 50  0000 C CNN
+F 2 "" H 1500 6500 50  0001 C CNN
+F 3 "" H 1500 6500 50  0001 C CNN
+	1    1500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x24 P2_FPC24/0.5MM1
+U 1 1 5AB8384F
+P 8950 5850
+F 0 "P2_FPC24/0.5MM1" H 8950 7050 50  0000 C CNN
+F 1 "Conn_01x24_Male" H 8950 4550 50  0000 C CNN
+F 2 "Connectors_FPC:Hirose_FH12-24S-0.5SH_1x24_P0.50mm_Horizontal_Gnd17" H 8950 5850 50  0001 C CNN
+F 3 "" H 8950 5850 50  0001 C CNN
+	1    8950 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q1
+U 1 1 5AB84F87
+P 9950 1700
+F 0 "Q1" H 10150 1750 50  0000 L CNN
+F 1 "Si1308EDL" H 10150 1650 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 10150 1800 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5AB850EA
+P 10700 2800
+F 0 "R3" V 10780 2800 50  0000 C CNN
+F 1 "R" V 10700 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10630 2800 50  0001 C CNN
+F 3 "" H 10700 2800 50  0001 C CNN
+F 4 "R" H 10700 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "3" H 10700 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 10700 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    10700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D1
+U 1 1 5AB854E9
+P 7450 3650
+F 0 "D1" H 7450 3750 50  0000 C CNN
+F 1 "D" H 7450 3550 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 7450 3650 50  0001 C CNN
+F 3 "" H 7450 3650 50  0001 C CNN
+	1    7450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D2
+U 1 1 5AB85650
+P 7850 4050
+F 0 "D2" H 7850 4150 50  0000 C CNN
+F 1 "D" H 7850 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 7850 4050 50  0001 C CNN
+F 3 "" H 7850 4050 50  0001 C CNN
+	1    7850 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5819 D3
+U 1 1 5AB857ED
+P 8050 2350
+F 0 "D3" H 8050 2450 50  0000 C CNN
+F 1 "D" H 8050 2250 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 8050 2350 50  0001 C CNN
+F 3 "" H 8050 2350 50  0001 C CNN
+	1    8050 2350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C 4.7uf2
+U 1 1 5AB85ABA
+P 7850 3250
+F 0 "4.7uf2" H 7875 3350 50  0000 L CNN
+F 1 "C" H 7875 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7888 3100 50  0001 C CNN
+F 3 "" H 7850 3250 50  0001 C CNN
+	1    7850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 4.7uf1
+U 1 1 5AB85D32
+P 1350 1850
+F 0 "4.7uf1" H 1375 1950 50  0000 L CNN
+F 1 "C" H 1375 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1388 1700 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    1   
+$EndComp
+$Comp
+L pspice:INDUCTOR 10uH1
+U 1 1 5AB85DF5
+P 5350 1600
+F 0 "10uH1" V 5300 1600 50  0000 C CNN
+F 1 "L" V 5425 1600 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 5350 1600 50  0001 C CNN
+F 3 "" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5AB8625C
+P 1350 2100
+F 0 "#PWR0103" H 1350 1850 50  0001 C CNN
+F 1 "GND" H 1350 1950 50  0000 C CNN
+F 2 "" H 1350 2100 50  0001 C CNN
+F 3 "" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5AB86302
+P 10700 4350
+F 0 "#PWR0104" H 10700 4100 50  0001 C CNN
+F 1 "GND" H 10700 4200 50  0000 C CNN
+F 2 "" H 10700 4350 50  0001 C CNN
+F 3 "" H 10700 4350 50  0001 C CNN
+	1    10700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF3
+U 1 1 5ABC136B
+P 4050 5850
+F 0 "1uF3" H 4075 5950 50  0000 L CNN
+F 1 "C" H 4075 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4088 5700 50  0001 C CNN
+F 3 "" H 4050 5850 50  0001 C CNN
+	1    4050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF4
+U 1 1 5ABC14A1
+P 4350 5850
+F 0 "1uF4" H 4375 5950 50  0000 L CNN
+F 1 "C" H 4375 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4388 5700 50  0001 C CNN
+F 3 "" H 4350 5850 50  0001 C CNN
+	1    4350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF5
+U 1 1 5ABC1507
+P 4650 5850
+F 0 "1uF5" H 4675 5950 50  0000 L CNN
+F 1 "C" H 4675 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4688 5700 50  0001 C CNN
+F 3 "" H 4650 5850 50  0001 C CNN
+	1    4650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF6
+U 1 1 5ABC155D
+P 4950 5850
+F 0 "1uF6" H 4975 5950 50  0000 L CNN
+F 1 "C" H 4975 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4988 5700 50  0001 C CNN
+F 3 "" H 4950 5850 50  0001 C CNN
+	1    4950 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF7
+U 1 1 5ABC15B1
+P 5300 5850
+F 0 "1uF7" H 5325 5950 50  0000 L CNN
+F 1 "C" H 5325 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5338 5700 50  0001 C CNN
+F 3 "" H 5300 5850 50  0001 C CNN
+	1    5300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF8
+U 1 1 5ABC1613
+P 5600 5850
+F 0 "1uF8" H 5625 5950 50  0000 L CNN
+F 1 "C" H 5625 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5638 5700 50  0001 C CNN
+F 3 "" H 5600 5850 50  0001 C CNN
+	1    5600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF2
+U 1 1 5ABC166F
+P 3750 5850
+F 0 "1uF2" H 3775 5950 50  0000 L CNN
+F 1 "C" H 3775 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3788 5700 50  0001 C CNN
+F 3 "" H 3750 5850 50  0001 C CNN
+	1    3750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF1
+U 1 1 5ABC16D3
+P 3450 5850
+F 0 "1uF1" H 3475 5950 50  0000 L CNN
+F 1 "C" H 3475 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3488 5700 50  0001 C CNN
+F 3 "" H 3450 5850 50  0001 C CNN
+	1    3450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 1uF9
+U 1 1 5ABC1EFA
+P 5900 5850
+F 0 "1uF9" H 5925 5950 50  0000 L CNN
+F 1 "C" H 5925 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5938 5700 50  0001 C CNN
+F 3 "" H 5900 5850 50  0001 C CNN
+	1    5900 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2950 10700 3100
+Wire Wire Line
+	10150 1600 10700 1600
+Wire Wire Line
+	3450 5700 3450 5150
+Wire Wire Line
+	3450 5150 7750 5150
+Wire Wire Line
+	7750 5150 7750 5650
+Wire Wire Line
+	3750 5700 3750 5250
+Wire Wire Line
+	3750 5250 7850 5250
+Connection ~ 7850 5250
+Wire Wire Line
+	4050 5700 4050 5300
+Wire Wire Line
+	4050 5300 7950 5300
+Wire Wire Line
+	7950 5300 7950 5650
+Wire Wire Line
+	4350 5700 4350 5350
+Wire Wire Line
+	4350 5350 8050 5350
+Connection ~ 8050 5350
+Wire Wire Line
+	4650 5400 4650 5700
+Wire Wire Line
+	4650 5400 8150 5400
+Wire Wire Line
+	8150 5400 8150 5650
+Wire Wire Line
+	4950 5450 4950 5700
+Wire Wire Line
+	4950 5450 8250 5450
+Wire Wire Line
+	8250 5450 8250 5650
+Wire Wire Line
+	5300 5500 5300 5700
+Wire Wire Line
+	5300 5500 8350 5500
+Wire Wire Line
+	8350 5500 8350 5650
+Wire Wire Line
+	5600 5700 5600 5550
+Wire Wire Line
+	5600 5550 9650 5550
+Wire Wire Line
+	9650 5550 9650 5650
+Wire Wire Line
+	5900 5700 5900 5600
+Wire Wire Line
+	5900 5600 9750 5600
+Wire Wire Line
+	9750 5600 9750 5650
+Wire Wire Line
+	5900 6250 5900 6000
+Wire Wire Line
+	1500 6250 2050 6250
+Connection ~ 1500 6250
+Wire Wire Line
+	5600 6000 5600 6250
+Connection ~ 5600 6250
+Wire Wire Line
+	5300 6000 5300 6250
+Connection ~ 5300 6250
+Wire Wire Line
+	4950 6000 4950 6250
+Connection ~ 4950 6250
+Wire Wire Line
+	4650 6000 4650 6250
+Connection ~ 4650 6250
+Wire Wire Line
+	4350 6000 4350 6250
+Connection ~ 4350 6250
+Wire Wire Line
+	4050 6000 4050 6250
+Connection ~ 4050 6250
+Wire Wire Line
+	3750 6000 3750 6250
+Connection ~ 3750 6250
+Wire Wire Line
+	3450 6000 3450 6250
+Connection ~ 3450 6250
+Wire Wire Line
+	7850 3400 7850 3650
+Wire Wire Line
+	8050 2500 8050 5350
+Wire Wire Line
+	7850 4200 7850 5250
+Connection ~ 7850 3650
+$Comp
+L power:GND #PWR0105
+U 1 1 5ABC3781
+P 7100 3750
+F 0 "#PWR0105" H 7100 3500 50  0001 C CNN
+F 1 "GND" H 7100 3600 50  0000 C CNN
+F 2 "" H 7100 3750 50  0001 C CNN
+F 3 "" H 7100 3750 50  0001 C CNN
+	1    7100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3650 7100 3650
+Wire Wire Line
+	1350 2000 1350 2100
+Wire Wire Line
+	7850 3100 7850 1600
+Connection ~ 7850 1600
+Connection ~ 8050 1600
+Wire Wire Line
+	10700 1600 10700 2050
+Wire Wire Line
+	8050 1600 8050 2200
+Wire Wire Line
+	9850 5650 9850 2050
+Wire Wire Line
+	9850 2050 10700 2050
+Connection ~ 10700 2050
+Wire Wire Line
+	9350 5650 9350 3100
+Wire Wire Line
+	9350 3100 10700 3100
+Connection ~ 10700 3100
+Wire Wire Line
+	9250 5650 9250 2850
+Wire Wire Line
+	9150 5650 9150 1700
+Wire Wire Line
+	9150 1700 8650 1700
+Wire Wire Line
+	9050 5650 9050 4350
+Wire Wire Line
+	7100 3650 7100 3750
+Wire Wire Line
+	7600 3650 7850 3650
+Wire Wire Line
+	8950 5650 8950 4450
+Wire Wire Line
+	8850 5650 8850 2650
+Wire Wire Line
+	8750 5650 8750 4550
+$Comp
+L Device:C 0.01uF1
+U 1 1 5ABC6B36
+P 2600 5800
+F 0 "0.01uF1" H 2625 5900 50  0000 L CNN
+F 1 "C" H 2625 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2638 5650 50  0001 C CNN
+F 3 "" H 2600 5800 50  0001 C CNN
+F 4 "C" H 2600 5800 50  0001 C CNN "Spice_Primitive"
+F 5 "0.01u" H 2600 5800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2600 5800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5650 2600 5100
+Wire Wire Line
+	2600 5950 2600 6250
+Wire Wire Line
+	2600 5100 8650 5100
+Wire Wire Line
+	8650 1700 8650 5100
+Connection ~ 8650 1700
+Connection ~ 8650 5100
+Wire Wire Line
+	8550 5650 8550 1700
+Wire Wire Line
+	8450 5650 8450 5000
+Wire Wire Line
+	8450 5000 4800 5000
+Connection ~ 2600 6250
+Wire Wire Line
+	7850 5250 7850 5650
+Wire Wire Line
+	8050 5350 8050 5650
+Wire Wire Line
+	1500 6250 1500 6500
+Wire Wire Line
+	5600 6250 5900 6250
+Wire Wire Line
+	5300 6250 5600 6250
+Wire Wire Line
+	4950 6250 5300 6250
+Wire Wire Line
+	4650 6250 4950 6250
+Wire Wire Line
+	4350 6250 4650 6250
+Wire Wire Line
+	4050 6250 4350 6250
+Wire Wire Line
+	3750 6250 4050 6250
+Wire Wire Line
+	3450 6250 3750 6250
+Wire Wire Line
+	7850 3650 7850 3900
+Wire Wire Line
+	7850 1600 8050 1600
+Wire Wire Line
+	8050 1600 9750 1600
+Wire Wire Line
+	10700 2050 10700 2650
+Wire Wire Line
+	10700 3100 10700 3700
+Wire Wire Line
+	8650 1700 8550 1700
+Wire Wire Line
+	8650 5100 8650 5650
+Wire Wire Line
+	1500 5000 1500 6250
+Wire Wire Line
+	2600 6250 3450 6250
+Wire Wire Line
+	5600 1600 7850 1600
+Wire Wire Line
+	1350 1600 1350 1700
+Wire Wire Line
+	2750 1850 2750 1600
+Connection ~ 2750 1600
+Wire Wire Line
+	2850 4850 2850 5000
+Connection ~ 2850 5000
+Wire Wire Line
+	2850 5000 1500 5000
+$Comp
+L Device:R R10k1
+U 1 1 5AE16367
+P 10300 3700
+F 0 "R10k1" V 10093 3700 50  0000 C CNN
+F 1 "R" V 10184 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10230 3700 50  0001 C CNN
+F 3 "~" H 10300 3700 50  0001 C CNN
+F 4 "R" H 10300 3700 50  0001 C CNN "Spice_Primitive"
+F 5 "10k" H 10300 3700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 10300 3700 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    10300 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 3700 9950 3700
+Connection ~ 9950 3700
+Wire Wire Line
+	9950 3700 9950 5650
+Wire Wire Line
+	10450 3700 10700 3700
+Connection ~ 10700 3700
+Wire Wire Line
+	10700 3700 10700 4350
+Wire Wire Line
+	8550 1700 4800 1700
+Wire Wire Line
+	3900 1700 3900 1600
+Connection ~ 8550 1700
+Connection ~ 3900 1600
+Wire Wire Line
+	3900 1600 5100 1600
+Wire Wire Line
+	3750 2850 9250 2850
+Wire Wire Line
+	3750 4350 9050 4350
+Wire Wire Line
+	9950 1600 9950 1900
+Connection ~ 9950 1900
+Wire Wire Line
+	9950 1900 9950 3700
+Wire Wire Line
+	9550 5650 9550 5450
+Wire Wire Line
+	9550 5450 10050 5450
+Wire Wire Line
+	10050 5450 10050 5650
+Wire Wire Line
+	9450 5650 9450 5450
+Wire Wire Line
+	9450 5450 9550 5450
+Connection ~ 9550 5450
+$Comp
+L Device:Battery_Cell BT3.3v1
+U 1 1 5ADD4BEB
+P 700 1800
+F 0 "BT3.3v1" H 818 1896 50  0000 L CNN
+F 1 "Battery_Cell" H 818 1805 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_3000_1x12mm-CoinCell" V 700 1860 50  0001 C CNN
+F 3 "~" V 700 1860 50  0001 C CNN
+F 4 "V" H 700 1800 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 3.3" H 700 1800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 700 1800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    700  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1600 2750 1600
+Wire Wire Line
+	700  1600 1350 1600
+Wire Wire Line
+	2750 1600 2950 1600
+Connection ~ 1350 1600
+$Comp
+L power:GND #PWR0102
+U 1 1 5ADDF447
+P 700 2150
+F 0 "#PWR0102" H 700 1900 50  0001 C CNN
+F 1 "GND" H 705 1977 50  0000 C CNN
+F 2 "" H 700 2150 50  0001 C CNN
+F 3 "" H 700 2150 50  0001 C CNN
+	1    700  2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1900 700  2150
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5ADE3843
+P 4500 3500
+F 0 "J1" H 4550 3817 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4550 3726 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3400 4800 1700
+Connection ~ 4800 1700
+Wire Wire Line
+	4800 1700 3900 1700
+Wire Wire Line
+	4800 3600 4800 5000
+Connection ~ 4800 5000
+Wire Wire Line
+	4800 5000 2850 5000
+Wire Wire Line
+	4300 3600 4300 3650
+Wire Wire Line
+	4300 3650 3750 3650
+Wire Wire Line
+	4300 3400 4300 2550
+Wire Wire Line
+	4300 2550 3750 2550
+Wire Wire Line
+	3750 2450 5100 2450
+Wire Wire Line
+	5100 2450 5100 3500
+Wire Wire Line
+	5100 3500 4800 3500
+Wire Wire Line
+	4300 3500 4100 3500
+Wire Wire Line
+	4100 3500 4100 2650
+Wire Wire Line
+	4100 2650 3750 2650
+Wire Wire Line
+	2950 1850 2950 1600
+Connection ~ 2950 1600
+Wire Wire Line
+	2950 1600 3900 1600
+$Comp
+L Device:C Ctouch1
+U 1 1 5AE0ACF2
+P 2050 5800
+F 0 "Ctouch1" H 2165 5846 50  0000 L CNN
+F 1 "C" H 2165 5755 50  0000 L CNN
+F 2 "Buttons_Switches_SMD:Touchpad" H 2088 5650 50  0001 C CNN
+F 3 "~" H 2050 5800 50  0001 C CNN
+	1    2050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rtouch1
+U 1 1 5AE0ADBF
+P 4000 4000
+F 0 "Rtouch1" H 4070 4046 50  0000 L CNN
+F 1 "R" H 4070 3955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" V 3930 4000 50  0001 C CNN
+F 3 "~" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5050 2050 5050
+Wire Wire Line
+	2050 5050 2050 5650
+Wire Wire Line
+	2050 5950 2050 6250
+Connection ~ 2050 6250
+Wire Wire Line
+	2050 6250 2600 6250
+Wire Wire Line
+	4000 4150 4000 4200
+Wire Wire Line
+	3750 3950 3850 3950
+Wire Wire Line
+	3850 3950 3850 4200
+Wire Wire Line
+	3850 4200 4000 4200
+Connection ~ 4000 4200
+Wire Wire Line
+	4000 4200 4000 5050
+Wire Wire Line
+	4000 3850 3750 3850
+Wire Wire Line
+	4300 3650 4300 4450
+Connection ~ 4300 3650
+Wire Wire Line
+	4300 4450 8950 4450
+Wire Wire Line
+	5100 3500 5100 4550
+Connection ~ 5100 3500
+Wire Wire Line
+	5100 4550 8750 4550
+Connection ~ 4100 2650
+Wire Wire Line
+	4100 2650 8850 2650
+$EndSCHEMATC
