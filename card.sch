@@ -42,7 +42,7 @@ U 1 1 5AB8384F
 P 8950 5850
 F 0 "P2_FPC24/0.5MM1" H 8950 7050 50  0000 C CNN
 F 1 "Conn_01x24_Male" H 8950 4550 50  0000 C CNN
-F 2 "Connectors_FPC:Hirose_FH12-24S-0.5SH_1x24_P0.50mm_Horizontal_Gnd17" H 8950 5850 50  0001 C CNN
+F 2 "Connectors_FPC:Hirose_FH12-24S-0.5SH_1x24_P0.50mm_Horizontal_Gnd17_Mirr" H 8950 5850 50  0001 C CNN
 F 3 "" H 8950 5850 50  0001 C CNN
 	1    8950 5850
 	0    1    1    0   
@@ -117,11 +117,11 @@ F 3 "" H 7850 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C 4.7uf1
+L Device:C C
 U 1 1 5AB85D32
 P 1350 1850
-F 0 "4.7uf1" H 1375 1950 50  0000 L CNN
-F 1 "C" H 1375 1750 50  0000 L CNN
+F 0 "C" H 1375 1950 50  0000 L CNN
+F 1 "4.7uf1" H 1375 1750 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 1388 1700 50  0001 C CNN
 F 3 "" H 1350 1850 50  0001 C CNN
 	1    1350 1850
@@ -518,10 +518,6 @@ Connection ~ 3900 1600
 Wire Wire Line
 	3900 1600 5100 1600
 Wire Wire Line
-	3750 2850 9250 2850
-Wire Wire Line
-	3750 4350 9050 4350
-Wire Wire Line
 	9950 1600 9950 1900
 Connection ~ 9950 1900
 Wire Wire Line
@@ -595,13 +591,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 3600 4300 3650
 Wire Wire Line
-	4300 3650 3750 3650
-Wire Wire Line
 	4300 3400 4300 2550
-Wire Wire Line
-	4300 2550 3750 2550
-Wire Wire Line
-	3750 2450 5100 2450
 Wire Wire Line
 	5100 2450 5100 3500
 Wire Wire Line
@@ -610,8 +600,6 @@ Wire Wire Line
 	4300 3500 4100 3500
 Wire Wire Line
 	4100 3500 4100 2650
-Wire Wire Line
-	4100 2650 3750 2650
 Wire Wire Line
 	2950 1850 2950 1600
 Connection ~ 2950 1600
@@ -651,21 +639,12 @@ Wire Wire Line
 Wire Wire Line
 	4000 4150 4000 4200
 Wire Wire Line
-	3750 3950 3850 3950
-Wire Wire Line
 	3850 3950 3850 4200
 Wire Wire Line
 	3850 4200 4000 4200
 Connection ~ 4000 4200
 Wire Wire Line
 	4000 4200 4000 5050
-Wire Wire Line
-	4000 3850 3750 3850
-Wire Wire Line
-	4300 3650 4300 4450
-Connection ~ 4300 3650
-Wire Wire Line
-	4300 4450 8950 4450
 Wire Wire Line
 	5100 3500 5100 4550
 Connection ~ 5100 3500
@@ -674,4 +653,24 @@ Wire Wire Line
 Connection ~ 4100 2650
 Wire Wire Line
 	4100 2650 8850 2650
+Wire Wire Line
+	2750 1850 2850 1850
+Wire Wire Line
+	3450 2450 5100 2450
+Wire Wire Line
+	3450 2550 4300 2550
+Wire Wire Line
+	3450 2650 4100 2650
+Wire Wire Line
+	3450 2850 9250 2850
+Wire Wire Line
+	3450 3650 4300 3650
+Wire Wire Line
+	3450 3850 4000 3850
+Wire Wire Line
+	3450 3950 3850 3950
+Wire Wire Line
+	3450 4350 9050 4350
+Wire Wire Line
+	3450 4450 8950 4450
 $EndSCHEMATC
