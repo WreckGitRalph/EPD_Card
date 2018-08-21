@@ -53,7 +53,7 @@ U 1 1 5AB84F87
 P 9950 1700
 F 0 "Q1" H 10150 1750 50  0000 L CNN
 F 1 "Si1308EDL" H 10150 1650 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223" H 10150 1800 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering" H 10150 1800 50  0001 C CNN
 F 3 "" H 9950 1700 50  0001 C CNN
 	1    9950 1700
 	0    -1   -1   0   
@@ -133,7 +133,7 @@ U 1 1 5AB85DF5
 P 5350 1600
 F 0 "10uH1" V 5300 1600 50  0000 C CNN
 F 1 "L" V 5425 1600 50  0000 C CNN
-F 2 "Inductors_SMD:L_0805" H 5350 1600 50  0001 C CNN
+F 2 "Inductors_SMD:L_1210_HandSoldering" H 5350 1600 50  0001 C CNN
 F 3 "" H 5350 1600 50  0001 C CNN
 	1    5350 1600
 	1    0    0    -1  
@@ -387,9 +387,7 @@ Connection ~ 10700 3100
 Wire Wire Line
 	9250 5650 9250 4700
 Wire Wire Line
-	9150 5650 9150 1700
-Wire Wire Line
-	9150 1700 8650 1700
+	9150 5650 9150 2750
 Wire Wire Line
 	9050 5650 9050 4350
 Wire Wire Line
@@ -424,7 +422,6 @@ Wire Wire Line
 	2600 5100 8650 5100
 Wire Wire Line
 	8650 1700 8650 5100
-Connection ~ 8650 1700
 Connection ~ 8650 5100
 Wire Wire Line
 	8550 5650 8550 1700
@@ -621,7 +618,7 @@ L Device:R Rtouch1
 U 1 1 5AE0ADBF
 P 4000 4000
 F 0 "Rtouch1" H 4070 4046 50  0000 L CNN
-F 1 "R" H 4070 3955 50  0000 L CNN
+F 1 "1M" H 4070 3955 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3930 4000 50  0001 C CNN
 F 3 "~" H 4000 4000 50  0001 C CNN
 	1    4000 4000
@@ -677,4 +674,32 @@ Wire Wire Line
 	4950 4550 4950 4700
 Wire Wire Line
 	4950 4700 9250 4700
+Wire Wire Line
+	3450 3250 3750 3250
+Wire Wire Line
+	3750 3250 3750 2750
+Wire Wire Line
+	3750 2750 9150 2750
+Text Label 8950 2750 0    50   ~ 0
+RES
+Text Label 9950 2350 0    50   ~ 0
+GDR
+Text Label 10300 2050 0    50   ~ 0
+RESE
+Text Label 9500 3100 0    50   ~ 0
+BS
+Text Label 6850 4700 0    50   ~ 0
+BUSY
+Text Label 6450 4350 0    50   ~ 0
+DC
+Text Label 6600 4450 0    50   ~ 0
+CS
+Text Label 6500 2650 0    50   ~ 0
+SCLK
+Text Label 6750 4550 0    50   ~ 0
+SDI
+Text Label 7850 4950 0    50   ~ 0
+PREVGL
+Text Label 8050 4800 0    50   ~ 0
+PREVGH
 $EndSCHEMATC
